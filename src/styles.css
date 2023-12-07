@@ -1,1 +1,188 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+}
+
+.container {
+    text-align: center;
+    width: 100%; /* Asegura que ocupe toda la pantalla */
+}
+
+.two-column-layout {
+    display: flex;
+    width: 100vw;
+}
+
+.left-column {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.red-box {
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-left {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.red-box-top {
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.white-text {
+    color: white;
+}
+
+.btn-right {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dynamic-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 10px;
+}
+.back-arrow {
+    width: 20px;
+    height: 20px;
+    /* Puedes agregar más estilos según sea necesario */
+}
+
+.footer {
+    position: fixed;
+    background-color: var(--second-color);
+    color: #050505;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+    padding: 10px 0;
+    
+    
+  }
+  
+  .footer__title {
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+  }
+  
+  .footer__social {
+    margin-bottom: var(--mb-4);
+  }
+  
+  .footer__icon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 var(--mb-2);
+  }
+  
+  .footer__copy {
+    font-size: var(--smaller-font-size);
+  }
+  .admin-form {
+    text-align: left;
+    margin-top: 20px;
+}
+.admin-form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.form-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.small-input {
+    width: 50%; /* Ajusta el ancho según tus preferencias */
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-width {
+    width: auto; /* O ajusta el ancho según tus necesidades */
+}
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2; /* Color gris de fondo */
+    color: black; /* Color de texto negro */
+}
+
+.custom-table th {
+    background-color: #ddd; /* Color de fondo para las celdas de encabezado */
+}
+
+.custom-table tbody tr:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #3498db; /* Azul */
+    color: white;
+}
+
+.btn-delete {
+    background-color: #e74c3c; /* Rojo */
+    color: white;
+}

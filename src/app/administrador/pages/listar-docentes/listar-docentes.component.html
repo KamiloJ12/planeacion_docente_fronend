@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="two-column-layout">
+        <div class="left-column">
+            <div class="red-box">
+                <h2 class="white-text">Administrador</h2>
+            </div>
+            <button class="btn-left">Agregar Competencia</button>
+            <button class="btn-left">Agregar RA</button>
+            <a routerLink="/docentes/administrador/agregar" class="btn-left custom-width">Agregar Docente</a>
+            <button class="btn-left">Agregar Materia</button>
+            <button class="btn-left">Docentes</button>
+            <button class="btn-left">Competencias</button>
+            <button class="btn-left">Planeaciones</button>
+            <button class="btn-left">Materias</button>
+        </div>
+        <div class="right-column">
+            <div class="red-box-top">
+                <span class="white-text">Judith Pilar</span>
+                <a href="../html/Administrador.html">
+                    <img src="/assets/images/flecha.png" alt="Regresar" class="back-arrow">
+                </a>
+            </div>
+            <div class="dynamic-content">
+                <p class="form-title">Lista de Docentes</p>
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Nombre</th>
+                            <th>Materia</th>
+                            <th>Grupo</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <!-- @for(doc of docentes; track doc.name) {
+                            <tr>
+                                <td> {{ doc.codigo }} </td>
+                                <td> {{ doc.nombre }} </td>
+                                <td> {{ doc.grupo }} </td>
+                                <td> {{ doc.materia }} </td>
+                                <td><button class="btn-edit">Editar</button>
+                                    <button class="btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                        }  -->
+
+                        <tr *ngFor="let doc of docentes">
+                            <td> {{ doc.codigo }} </td>
+                            <td> {{ doc.nombre }} </td>
+                            <td> {{ doc.grupo }} </td>
+                            <td> {{ doc.materia }} </td>
+                            <td><button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer" style="position: fixed; left: 0; bottom: 0; width: 100%; text-align: center; padding: 10px 0;">
+    <img src="/assets/images/ufps.jpg" align="left" alt="" class="skills__img"/>
+    <p class="footer__title"> Planificacion Docente </p>
+    <img src="/assets/images/sistemas.jpg" align="right" alt="" class="skills__img"/>
+    <p class="footer__copy">&#169; UFPS</p>
+</footer>
