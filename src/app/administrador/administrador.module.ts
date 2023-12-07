@@ -8,6 +8,7 @@ import { ListarDocentesComponent } from './pages/listar-docentes/listar-docentes
 import { AdministradorLayoutComponent } from './layout/administrador-layout/administrador-layout.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { AdministradorComponent } from './pages/administrador/administrador.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FooterComponent } from './component/footer/footer.component';
     ListarDocentesComponent,
     AdministradorLayoutComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AdministradorComponent
   ],
   imports: [
     CommonModule,

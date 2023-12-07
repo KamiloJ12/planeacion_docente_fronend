@@ -1,0 +1,126 @@
+.container {
+    background-color: #fff; /* Fondo blanco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.login-box {
+    background-color: #ccc; /* Fondo gris del recuadro de login */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: white; /* Texto blanco */
+    background-color: red; /* Fondo rojo */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Para centrar el botón */
+    margin: 0 auto; /* Para centrar el botón */
+}
+
+.btn-login:hover {
+    background-color: darkred;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.dashboard-box {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.dashboard-left img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.dashboard-right {
+    padding-left: 20px;
+    flex: 1;
+}
+
+.dashboard-title {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-dashboard {
+    display: block;
+    margin-top: 10px; /* Puedes ajustar el espacio entre los botones según tus preferencias */
+    background-color: #ff0000; /* Ajusta según tus preferencias */
+    color: #ffffff; /* Ajusta según tus preferencias */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-dashboard:hover {
+    background-color: darkred;
+}
+
+
