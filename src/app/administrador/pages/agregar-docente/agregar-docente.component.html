@@ -1,54 +1,22 @@
-<!-- <div class="container">
-    <div class="two-column-layout">
-        <div class="left-column">
-            <div class="red-box">
-                <h2 class="white-text">Administrador</h2>
-            </div>
-            <button class="btn-left">Agregar Competencia</button>
-            <button class="btn-left">Agregar RA</button>
-            <button class="btn-left">Agregar Docente</button>
-            <button class="btn-left">Agregar Materia</button>
-            <a routerLink="/administrador/docentes" class="btn-left custom-width">Docentes</a>
-            <button class="btn-left">Competencias</button>
-            <button class="btn-left">Planeaciones</button>
-            <button class="btn-left">Materias</button>
-        </div>
-        <div class="right-column">
-            <div class="red-box-top">
-                <span class="white-text">Judith Pilar</span>
-                <a href="../html/Administrador.html">
-                    <img src="/assets/images/flecha.png" alt="Regresar" class="back-arrow">
-                </a>
-            </div>
-            <div class="dynamic-content">
-                <Contenido dinámico aparecerá aquí -->
-                <div class="admin-form">
-                    <p class="form-title">Agregar Docente</p>
-                    <form [formGroup]="myForm"
-                            (ngSubmit)="submit()">
-                        <label for="codigo">Código:</label>
-                        <input formControlName="codigo" type="number" id="codigo" name="codigo" class="small-input" pattern="[0-9]+" required>
 
-                        <label for="nombre">Nombre:</label>
-                        <input formControlName="nombre" type="text" id="nombre" name="nombre" class="small-input" pattern="[A-Za-z]+" required>
+<div class="admin-form">
+    <p class="form-title">{{ isEditMode ? 'Editar': 'Agregar'}} Docente</p>
+    <form [formGroup]="myForm"
+            (ngSubmit)="submit()">
+        <label for="codigo">Código:</label>
+        <input formControlName="codigo" type="number" id="codigo" name="codigo" class="small-input" pattern="[0-9]+" required>
 
-                        <label for="materia">Materia:</label>
-                        <input formControlName="materia" type="text" id="materia" name="materia" class="small-input" pattern="[A-Za-z]+" required>
+        <label for="nombre">Nombre:</label>
+        <input formControlName="nombre" type="text" id="nombre" name="nombre" class="small-input" pattern="[A-Za-z]+" required>
 
-                        <label for="grupo">Grupo:</label>
-                        <input formControlName="grupo" type="text" id="grupo" name="grupo" class="small-input" pattern="[A-Za-z]+" required>
+        <label for="materia">Materia:</label>
+        <input formControlName="materia" type="text" id="materia" name="materia" class="small-input" pattern="[A-Za-z]+" required>
+
+        <label for="grupo">Grupo:</label>
+        <input formControlName="grupo" type="text" id="grupo" name="grupo" class="small-input" pattern="[A-Za-z]+" required>
 
 
-                        <button class="btn-red" type="submit">Agregar Docente</button>
-                    </form>
-                </div>
-            <!-- </div>
-        </div>
-    </div>
+        <button class="btn-red" type="submit">{{ isEditMode ? 'Editar': 'Agregar'}} Docente</button>
+    </form>
 </div>
-<footer class="footer" style="position: fixed; left: 0; bottom: 0; width: 100%;  text-align: center; padding: 10px 0;">
-    <img src="/assets/images/ufps.jpg" align="left" alt="" class="skills__img">
-    <p class="footer__title"> Planificacion Docente </p>
-    <img src="/assets/images/sistemas.jpg" align="right" alt="" class="skills__img">
-    <p class="footer__copy">&#169; UFPS</p>
-</footer> -->
+            

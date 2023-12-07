@@ -6,7 +6,7 @@ import { AdministradorLayoutComponent } from './layout/administrador-layout/admi
 
 const routes: Routes = [
   { 
-    path: 'administrador', 
+    path: 'docentes', 
     component: AdministradorLayoutComponent, 
     children: [
       { path: '', component: ListarDocentesComponent },
@@ -15,7 +15,7 @@ const routes: Routes = [
       { path: '**', redirectTo: '' },
     ]
   },
-  { path: '**', redirectTo: 'administrador' },
+  { path: '**', redirectTo: 'docentes' },
 ];
 
 @NgModule({

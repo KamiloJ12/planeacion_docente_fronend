@@ -14,18 +14,20 @@ export class ListarDocentesComponent {
   public docentes: any[] = [];
 
   ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
+    this.obtenerDocentes();
+  }
+
+  obtenerDocentes() {
     this.docentesService.obtenerDocentes()
       .subscribe( docentes => this.docentes = docentes );
   }
 
   deleteDocente( id: number ): void {
     this.docentesService.deleteDocentes(id)
-      .subscribe();
+      .subscribe( data => this.obtenerDocentes() );
   }
 
   editarDocente( id: number ): void {
-    this.router.navigateByUrl(`/administrador/editar/${id}`);
+    this.router.navigateByUrl(`/administrador/docentes/editar/${id}`);
   }
 }

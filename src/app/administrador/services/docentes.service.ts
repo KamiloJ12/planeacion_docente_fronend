@@ -32,4 +32,9 @@ export class DocentesService {
     const url = `${ this.baseUrl }/${ id }`;
     return this.http.delete<any>( url );
   }
+
+  obtenerDocentePorId( id: number ): Observable<any[]> {
+    const url  = `${ this.baseUrl }/${ id }`;
+    return this.http.get<any[]>(url);
+  }
 }

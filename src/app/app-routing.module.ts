@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'docentes', loadChildren: () => import('./administrador/administrador.module').then( m => m.AdministradorModule ) },
-  { path: '**', redirectTo: 'docentes' },
+  { path: 'administrador', loadChildren: () => import('./administrador/administrador.module').then( m => m.AdministradorModule ) },
+  { path: '**', redirectTo: 'administrador' },
 ];
 
 @NgModule({
