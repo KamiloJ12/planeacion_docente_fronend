@@ -7,10 +7,11 @@ import { AdministradorLayoutComponent } from './layout/administrador-layout/admi
 const routes: Routes = [
   { 
     path: 'administrador', 
-    /* component: AdministradorLayoutComponent, */
+    component: AdministradorLayoutComponent, 
     children: [
       { path: '', component: ListarDocentesComponent },
       { path: 'agregar', component: AgregarDocenteComponent },
+      { path: 'editar/:id', component: AgregarDocenteComponent },
       { path: '**', redirectTo: '' },
     ]
   },

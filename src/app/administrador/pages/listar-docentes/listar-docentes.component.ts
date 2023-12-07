@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { DocentesService } from '../../services/docentes.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listar-docentes',
@@ -8,6 +9,8 @@ import { DocentesService } from '../../services/docentes.service';
 })
 export class ListarDocentesComponent {
   private docentesService = inject(DocentesService);
+  private router = inject(Router);
+
   public docentes: any[] = [];
 
   ngOnInit(): void {
@@ -15,5 +18,14 @@ export class ListarDocentesComponent {
     //Add 'implements OnInit' to the class.
     this.docentesService.obtenerDocentes()
       .subscribe( docentes => this.docentes = docentes );
+  }
+
+  deleteDocente( id: number ): void {
+    this.docentesService.deleteDocentes(id)
+      .subscribe();
+  }
+
+  editarDocente( id: number ): void {
+    this.router.navigateByUrl(`/administrador/editar/${id}`);
   }
 }

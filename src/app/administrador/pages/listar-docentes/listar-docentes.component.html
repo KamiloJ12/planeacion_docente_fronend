@@ -46,13 +46,14 @@
                             </tr>
                         }  -->
 
-                        <tr *ngFor="let doc of docentes">
-                            <td> {{ doc.codigo }} </td>
-                            <td> {{ doc.nombre }} </td>
-                            <td> {{ doc.grupo }} </td>
-                            <td> {{ doc.materia }} </td>
-                            <td><button class="btn-edit">Editar</button>
-                                <button class="btn-delete">Eliminar</button>
+                        <tr *ngFor="let docente of docentes">
+                            <td> {{ docente.codigo }} </td>
+                            <td> {{ docente.nombre }} </td>
+                            <td> {{ docente.grupo }} </td>
+                            <td> {{ docente.materia }} </td>
+                            <td>
+                                <button (click)="editarDocente(docente.id)" class="btn-edit">Editar</button>
+                                <button (click)="deleteDocente(docente.id)" class="btn-delete">Eliminar</button>
                             </td>
                         </tr>
                         
